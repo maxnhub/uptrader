@@ -1,0 +1,68 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href="https://img.icons8.com/doodle/48/000000/gold-bars--v1.png" rel="shortcut icon" type="image/x-icon")
+    title Uptrader | main page
+  body
+    .wrapper
+      .maincontent
+        //- +image('content/user.jpg', 'user-pic')
+        //- +icon('link', 'link-class')
+        //- .icon-bg
+        section.main
+          .container 
+            h1.main__title Выберите способ заработка
+            ul.main__list
+              li.main__list-item
+                .main__list-item-link.main__list-item-link--one
+                  +icon('torg', 'main__list-item-icon')
+                  p.main__list-item-text Торговать
+                .info__desc
+                  p.info__desc-text Если вы успешно торгуете и хотите значительно увеличить свой доход - откройте свои сделки для копирования тем, кто не хочет торговать сам и получайте с них комиссию!
+                  h2.info__desc-title Как стать Управляющим?
+                  ul.info__desc-list
+                    li.info__desc-list-item.info__desc-list-item--one Если у вас еще нет открытых счетов, то откройте Счет Option и пополните любым удобным для вас способом счет. 
+                    li.info__desc-list-item.info__desc-list-item--two Начните торговать на счете - это покажет уровень Вашей торговли и предоставит Инвесторам необходимую статистику
+                    li.info__desc-list-item.info__desc-list-item--three Если у вас уже есть открытый счет, зайдите в ЛК выберите свой счет и нажмите "стать Управляющим". После этого история ваших сделок добавится в статистику, и вы попадете в рейтинг управляющих.
+                    li.info__desc-list-item.info__desc-list-item--four Установите сумму вознаграждения.
+                    li.info__desc-list-item.info__desc-list-item--five В разделе кабинет Управляющего отслеживайте заявки на инвестирование, а также проверяйте вашу ветку на форуме.
+                  button.info__desc-button(type="button") Открыть счет
+
+              li.main__list-item
+                .main__list-item-link.main__list-item-link--two
+                  +icon('invest', 'main__list-item-icon')
+                  p.main__list-item-text Инвестировать
+                .info__desc
+                  p.info__desc-text Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот, кто умеет это делать, тогда попробуйте ЛАММ. ЛАММ - это сервис копирования сделок успешных трейдеров. Доходность ничем не ограничена!
+                  h2.info__desc-title Как это работает
+                  ul.info__desc-list
+                    li.info__desc-list-item.info__desc-list-item--one Вы выбираете управляющего из рейтинга по фильтру Options
+                    li.info__desc-list-item.info__desc-list-item--two Подключаете свой счет к счету Управляющего
+                    li.info__desc-list-item.info__desc-list-item--three На вашем счете начинается копирование сделок
+                    li.info__desc-list-item.info__desc-list-item--four Обратите внимание, что вы не перечисляете свои деньги Управляющему. Все ваши средства остаются на Вашем счете.
+                    li.info__desc-list-item.info__desc-list-item--five Вы можете подключиться к нескольким Управляющим одновременно.
+                    li.info__desc-list-item.info__desc-list-item--six Вы можете отключиться от Управляющих в любой момент.
+                  button.info__desc-button(type="button") Продолжить
+              li.main__list-item
+                .main__list-item-link.main__list-item-link--three
+                  +icon('person', 'main__list-item-icon main__list-item-icon--three')
+                  p.main__list-item-text Привлекать инвесторов
+                .info__desc
+                  p.info__desc-text 3 Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот, кто умеет это делать, тогда попробуйте ЛАММ. ЛАММ - это сервис копирования сделок успешных трейдеров. Доходность ничем не ограничена!
+                  h2.info__desc-title 3 Как это работает
+                  ul.info__desc-list
+                    li.info__desc-list-item.info__desc-list-item--one 3 Вы выбираете управляющего из рейтинга по фильтру Options
+                    li.info__desc-list-item.info__desc-list-item--two 3 Подключаете свой счет к счету Управляющего
+                    li.info__desc-list-item.info__desc-list-item--three 3 На вашем счете начинается копирование сделок
+                    li.info__desc-list-item.info__desc-list-item--four 3 Обратите внимание, что вы не перечисляете свои деньги Управляющему. Все ваши средства остаются на Вашем счете.
+                    li.info__desc-list-item.info__desc-list-item--five 3 Вы можете подключиться к нескольким Управляющим одновременно.
+                    li.info__desc-list-item.info__desc-list-item--six 3 Вы можете отключиться от Управляющих в любой момент.
+                  button.info__desc-button(type="button") Продолжить
+            
+            
+            

@@ -1,0 +1,90 @@
+.info {
+  background: url(../images/content/bg2.png) 0 0/cover no-repeat;
+  padding-bottom: 250px;
+  
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+    &-item {
+      cursor: pointer;
+      font-size: 22px;
+      min-width: 345px;
+      text-align: center;
+      border-bottom: 2px solid transparent;
+      &:hover, &-active {
+        color: $links-color;
+        border-bottom: 2px solid $links-color;
+      }
+      @include desktop992 {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+  &__desc {
+    display: none;
+
+    &-text {
+      font-size: 16px;
+      margin-bottom: 50px;
+      text-align: left;
+    }
+    &-title {
+      font-size: 19px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      &-item {
+        font-size: 16px;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:before {
+          content: "1";
+          margin-right: 10px;
+          font-size: 18px;
+          color: $links-color;
+        }
+        &--two {
+          &:before {
+            content: "2";
+          }
+        }
+        &--three {
+          &:before {
+            content: "3";
+          }
+        }
+        &--four {
+          &:before {
+            content: "4";
+          }
+        }
+        &--five {
+          &:before {
+            content: "5";
+          }
+        }
+        &--six {
+          &:before {
+            content: "6";
+          }
+        }
+      }
+    }
+    &-button {
+      padding: 10px 20px;
+      background: $links-color;
+      border-radius: 5px;
+      color: #fff;
+      width: 150px;
+    }
+  }
+}
